@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Sets dock items to size 30
+Apple.dock tilesize -int 30;
+
+# Corner preferences
+#  Possible values for tl/tr/bl/br:
+#  0: no-op
+#  2: Mission Control (all windows)
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+# https://github.com/ymendel/dotfiles/blob/master/osx/corners.defaults
+
+defaults write com.apple.dock wvous-br-corner -int 10
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# The following two need more 
+# attention since it requires 
+# pressing ENTER and password.
+# Installs Xcode command-line tools
+xcode-select --install
+
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+# https://github.com/skwp/dotfiles/
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Installs Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Homebrew Cask
+brew tap caskroom/cask
+
+# Install common apps
+brew cask install google-chrome
+brew cask install slack
+brew cask install 1password
+brew cask install dropbox
+brew cask install spotify
+
+# Checks for updates, then run them
+sudo sh -c “softwareupdate -ia && reboot”;
