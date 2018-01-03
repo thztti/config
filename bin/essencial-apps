@@ -1,10 +1,16 @@
+# The following two need
+# refactoring since it requires 
+# pressing ENTER and password.
+# Installs Xcode command-line tools
+xcode-select --install
+
 # Installs Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Homebrew Cask
 brew tap caskroom/cask
 
-# Install common apps
+# Install essencial apps
 brew cask install google-chrome
 brew cask install slack
 brew cask install 1password
