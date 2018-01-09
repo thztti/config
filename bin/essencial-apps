@@ -18,5 +18,7 @@ brew cask install dropbox
 brew cask install spotify
 brew cask install iterm2
 
+brew install calcurse
+
 # Checks for updates, then run them
 sudo sh -c “softwareupdate -ia && reboot”;
