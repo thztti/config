@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Sets Calcurse symbolic links from Dropbox to home folder
+ln -s ~/Dropbox/dotfiles/.calcurse ~/.calcurse
