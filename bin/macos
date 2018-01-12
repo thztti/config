@@ -1,6 +1,9 @@
 #!/bin/bash
 
-## Keyboard/Mouse
+# These are my personal preferences for macOS devices. It includes
+# configs for peripherical devices, developer stuff, file manupulation
+# settings and OS options that match my personal taste.
+
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0.02 
 
@@ -15,11 +18,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string 'TwoButton'
 defaults write com.apple.driver.AppleHIDMouse Button2 -int 2
 
-
 ## Developer stuff
 # Enable debug menu in Safari
 defaults write com.apple.safari IncludeDebugMenu -bool YES
-
 
 ## General OS stuff
 # Disable Notification center
