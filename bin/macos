@@ -39,3 +39,7 @@ Apple.dock tilesize -int 30;
 # https://github.com/ymendel/dotfiles/blob/master/osx/corners.defaults
 defaults write com.apple.dock wvous-br-corner -int 10
 defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Set dark mode
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+
