@@ -1,0 +1,1 @@
+alias gtdev='cd ~/dev/'
