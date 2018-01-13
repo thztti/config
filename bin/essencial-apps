@@ -21,6 +21,7 @@ brew cask install iterm2
 # Tools
 brew install calcurse
 brew install wget
+brew install rmtrash
 
 # Checks for updates, then run them
 sudo sh -c “softwareupdate -ia && reboot”;
