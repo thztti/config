@@ -26,6 +26,9 @@ defaults write com.apple.safari IncludeDebugMenu -bool YES
 # Disable Notification center
 launchctl unload /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 
+# Disable screenshot drop shadows
+defaults write com.apple.screencapture disable-shadow -bool TRUE
+
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool FALSE
 
