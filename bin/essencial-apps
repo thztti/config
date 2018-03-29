@@ -24,6 +24,7 @@ brew install calcurse
 brew install wget
 brew install rmtrash
 brew install fish
+brew install node
 
 # Checks for updates, then run them
 sudo sh -c “softwareupdate -ia && reboot”;
