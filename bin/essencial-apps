@@ -18,6 +18,7 @@ brew cask install dropbox
 brew cask install spotify
 brew cask install iterm2
 brew cask install transmission
+brew cask install itau
 
 # Tools
 brew install calcurse
