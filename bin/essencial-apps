@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # The following two need
 # refactoring since it requires 
 # pressing ENTER and password.
