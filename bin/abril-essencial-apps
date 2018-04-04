@@ -1,0 +1,6 @@
+#!/bin/bash
+
+brew cask install vagrant
+vagrant plugin install vagrant-hostsupdater
+
+git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git ~/dev/wpabril
