@@ -21,6 +21,7 @@ brew cask install spotify
 brew cask install iterm2
 brew cask install transmission
 brew cask install itau
+brew cask install steam
 
 # Tools
 brew install calcurse
